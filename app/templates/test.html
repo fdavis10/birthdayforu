@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт для дня рождения</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+    <script src='static/countdown.js'></script>
+</head>
+<body class="{{ 'opened' if opened else '' }}">
+    
+    <div id="countdown">
+        <span id="days"></span> дней 
+        <span id="hours"></span> часов 
+        <span id="minutes"></span> минут 
+        <span id="seconds"></span> секунд
+    </div>
+    <span class="loader"></span>
+    
+    <div id="content">
+        <h2>Сюрприз! Контент сайта открыт!</h2>
+        <p>Здесь можно добавить поздравления или другие сюрпризы.</p>
+    </div>
+
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div id="half-circle"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
